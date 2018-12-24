@@ -20,11 +20,8 @@ import com.dot2dotz.app.Utils.CommonUtils;
 import com.dot2dotz.app.Utils.MyTextView;
 import com.dot2dotz.app.Utils.Utilities;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-
-public class ActivityEmail extends AppCompatActivity {
+public class ActivityMobile extends AppCompatActivity {
 
     ImageView backArrow;
     FloatingActionButton nextICON;
@@ -35,8 +32,8 @@ public class ActivityEmail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_email);
-        CommonUtils.setLanguage(ActivityEmail.this);
+        setContentView(R.layout.activity_mobile);
+        CommonUtils.setLanguage(ActivityMobile.this);
 
         if (Build.VERSION.SDK_INT > 15) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -63,9 +60,9 @@ public class ActivityEmail extends AppCompatActivity {
                     /*if ((!isValidEmail(email.getText().toString()))) {
                         displayMessage(getString(R.string.email_validation));
                     } else {*/
-                        Utilities.hideKeyboard(ActivityEmail.this);
-                        SharedHelper.putKey(ActivityEmail.this, "email", email.getText().toString());
-                        Intent mainIntent = new Intent(ActivityEmail.this, ActivityPassword.class);
+                        Utilities.hideKeyboard(ActivityMobile.this);
+                        SharedHelper.putKey(ActivityMobile.this, "email", email.getText().toString());
+                        Intent mainIntent = new Intent(ActivityMobile.this, ActivityPassword.class);
                         startActivity(mainIntent);
                         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         /* }*/
@@ -86,9 +83,9 @@ public class ActivityEmail extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedHelper.putKey(ActivityEmail.this, "password", "");
-                Utilities.hideKeyboard(ActivityEmail.this);
-                Intent mainIntent = new Intent(ActivityEmail.this, RegisterActivity.class);
+                SharedHelper.putKey(ActivityMobile.this, "password", "");
+                Utilities.hideKeyboard(ActivityMobile.this);
+                Intent mainIntent = new Intent(ActivityMobile.this, RegisterActivity.class);
                 mainIntent.putExtra("isFromMailActivity", true);
                 startActivity(mainIntent);
                 overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
@@ -98,9 +95,9 @@ public class ActivityEmail extends AppCompatActivity {
         forgetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedHelper.putKey(ActivityEmail.this, "password", "");
-                Utilities.hideKeyboard(ActivityEmail.this);
-                Intent mainIntent = new Intent(ActivityEmail.this, ForgetPassword.class);
+                SharedHelper.putKey(ActivityMobile.this, "password", "");
+                Utilities.hideKeyboard(ActivityMobile.this);
+                Intent mainIntent = new Intent(ActivityMobile.this, ForgetPassword.class);
                 mainIntent.putExtra("isFromMailActivity", true);
                 startActivity(mainIntent);
             }
@@ -116,14 +113,6 @@ public class ActivityEmail extends AppCompatActivity {
             e.printStackTrace();
             Toast.makeText(this, toastString, Toast.LENGTH_SHORT).show();
         }
-    }
-
-    private boolean isValidEmail(String email) {
-        String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
-                + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
-        Matcher matcher = pattern.matcher(email);
-        return matcher.matches();
     }
 
     @Override

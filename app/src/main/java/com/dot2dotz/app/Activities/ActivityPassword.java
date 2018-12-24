@@ -93,10 +93,9 @@ public class ActivityPassword extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                /* SharedHelper.putKey(context,"password", "");
-                Intent mainIntent = new Intent(activity, ActivityEmail.class);
+                Intent mainIntent = new Intent(activity, ActivityMobile.class);
                 mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(mainIntent);
-
                 activity.finish();*/
                 onBackPressed();
             }
@@ -474,7 +473,7 @@ public class ActivityPassword extends AppCompatActivity {
    /* @Override
     public void onBackPressed() {
         SharedHelper.putKey(context,"password", "");
-        Intent mainIntent = new Intent(activity, ActivityEmail.class);
+        Intent mainIntent = new Intent(activity, ActivityMobile.class);
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(mainIntent);
         activity.finish();

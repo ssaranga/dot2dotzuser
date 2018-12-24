@@ -13,9 +13,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_120sdp"
+            android:layout_height="248dp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:src="@drawable/welcome_sample" />
+            android:src="@drawable/wcpng" />
 
         <com.dot2dotz.app.Utils.MyBoldTextView
             android:layout_width="match_parent"

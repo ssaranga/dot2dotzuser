@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context="com.dot2dotz.app.Activities.WelcomeScreenActivity">
+    tools:context="com.dot2dotz.app.Activities.IntroActivity">
 
     <RelativeLayout
         android:background="@color/background_color"

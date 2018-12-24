@@ -60,24 +60,24 @@ public class ActivitySettings extends AppCompatActivity {
 
     private void init() {
 
-        radioEnglish = (RadioButton) findViewById(R.id.radioEnglish);
-        radioHindi = (RadioButton) findViewById(R.id.radioHindi);
-        radioArabic = (RadioButton) findViewById(R.id.radioArabic);
-        radioUrdu = (RadioButton) findViewById(R.id.radioUrdu);
-        radioPunjabi = (RadioButton) findViewById(R.id.radioPunjabi);
+        radioEnglish = findViewById(R.id.radioEnglish);
+        radioHindi = findViewById(R.id.radioHindi);
+        radioArabic = findViewById(R.id.radioArabic);
+        radioUrdu = findViewById(R.id.radioUrdu);
+        radioPunjabi = findViewById(R.id.radioPunjabi);
 
 
 
-        lnrEnglish = (LinearLayout) findViewById(R.id.lnrEnglish);
-        lnrHindi = (LinearLayout) findViewById(R.id.lnrHindi);
-        lnrUrdu = (LinearLayout) findViewById(R.id.lnrUrdu);
-        lnrPunjabi = (LinearLayout) findViewById(R.id.lnrPunjabi);
+        lnrEnglish = findViewById(R.id.lnrEnglish);
+        lnrHindi = findViewById(R.id.lnrHindi);
+        lnrUrdu = findViewById(R.id.lnrUrdu);
+        lnrPunjabi = findViewById(R.id.lnrPunjabi);
 
 
 
-        lnrArabic = (LinearLayout) findViewById(R.id.lnrArabic);
+        lnrArabic = findViewById(R.id.lnrArabic);
 
-        backArrow = (ImageView) findViewById(R.id.backArrow);
+        backArrow = findViewById(R.id.backArrow);
         backArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
