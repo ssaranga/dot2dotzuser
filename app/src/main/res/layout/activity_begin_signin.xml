@@ -107,7 +107,7 @@
 
         <com.dot2dotz.app.Utils.MyTextView
             android:id="@+id/connect_social_txt"
-            android:visibility="gone"
+
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_marginLeft="@dimen/_30sdp"

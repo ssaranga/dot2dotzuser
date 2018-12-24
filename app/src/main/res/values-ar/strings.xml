@@ -5,7 +5,8 @@
 
     <string name="WEB_CLIENT_KEY">91672578681-krdjn3t7qh3c73skqp6d7ide8ba56dec.apps.googleusercontent.com</string>
     <string name="Outh_Client">"91672578681-flrvu48ulb7tlicov0m7l7e30vf73rtu.apps.googleusercontent.com</string>
-
+    <string name="facebook_app_id">236069877087224</string>
+    <string name="fb_login_protocol_scheme">fb236069877087224</string>
     <string name="label_language">لغة</string>
     <string name="app_name">&appName;</string>
     <string name="discount">خصم</string>

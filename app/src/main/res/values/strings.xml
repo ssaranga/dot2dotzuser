@@ -5,7 +5,9 @@
     <!--Google map-->
     <string name="google_map_api" translatable="false">AIzaSyCD30UnQoiw9FinROXL7GOGaLxbJ20LBKY</string>
     <!--Facebook App Id Account Kit -->
-    <string name="facebook_app_id" translatable="false">1818275234869999</string>
+    <string name="facebook_app_id">236069877087224</string>
+    <string name="fb_login_protocol_scheme">fb236069877087224</string>
+
     <string name="ACCOUNT_KIT_CLIENT_TOKEN" translatable="false">2834e988c4f6557f31fe427f9e87a283</string>
 
     <string name="WEB_CLIENT_KEY">91672578681-krdjn3t7qh3c73skqp6d7ide8ba56dec.apps.googleusercontent.com</string>
